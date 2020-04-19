@@ -1,5 +1,5 @@
 import { HemisphereLight, HemisphereLightHelper, DirectionalLight, DirectionalLightHelper, Color } from '../libs/three.module.js'
-import { scene } from './_basis.js'
+import { scene } from './basis.js'
 
 export function initLight() {
     const hemiLight = new HemisphereLight( 0xffffff, 0xffffff, 0.6 );

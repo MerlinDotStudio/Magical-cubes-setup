@@ -1,4 +1,4 @@
-import { scene, camera, renderer, stats } from './_basis.js'
+import { scene, camera, renderer, stats } from './basis.js'
 
 export function animate() {
 	requestAnimationFrame( animate );
