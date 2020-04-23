@@ -1,4 +1,4 @@
-import { HemisphereLight, HemisphereLightHelper, DirectionalLight, DirectionalLightHelper, Color } from '../libs/three.module.js'
+import { HemisphereLight, HemisphereLightHelper, DirectionalLight, DirectionalLightHelper, Color } from '../../libs/three.module.js'
 import { scene } from './basis.js'
 
 export function initLight() {

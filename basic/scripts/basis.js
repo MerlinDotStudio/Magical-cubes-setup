@@ -1,7 +1,7 @@
-import Stats from '../libs/stats.module.js'
-import { Scene, PerspectiveCamera, WebGLRenderer, Color } from '../libs/three.module.js'
-import { OrbitControls } from '../libs/OrbitControls.js'
-import { TransformControls } from '../libs/TransformControls.js'
+import Stats from '../../libs/stats.module.js'
+import { Scene, PerspectiveCamera, WebGLRenderer, Color } from '../../libs/three.module.js'
+import { OrbitControls } from '../../libs/OrbitControls.js'
+import { TransformControls } from '../../libs/TransformControls.js'
 
 const scene = new Scene();
 scene.background = new Color().setHex(0xdbdbdb)

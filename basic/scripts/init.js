@@ -1,4 +1,4 @@
-import { BoxGeometry, MeshDepthMaterial, PlaneBufferGeometry, MeshBasicMaterial, MeshLambertMaterial, Mesh, AxesHelper, DoubleSide, BackSide } from '../libs/three.module.js'
+import { BoxGeometry, MeshDepthMaterial, PlaneBufferGeometry, MeshBasicMaterial, MeshLambertMaterial, Mesh, AxesHelper, DoubleSide, BackSide } from '../../libs/three.module.js'
 import { scene, transformControl } from './basis.js'
 
 export function init() {
