@@ -19,6 +19,37 @@ const tempColor = new THREE.Color()
 const colors = new Array(1000).fill().map(() => niceColors[17][Math.floor(Math.random() * 5)])
 
 function Boxes() {
+  const [transformControl, setTControl] = useState()
+
+  useEffect(() => {
+    console.log(`To change the transform options you have the following: 
+    q: toggle the transform between world and local
+    w: set to translate mode
+    e: set to rotate mode
+    r: set to scale mode`)
+  }, [])
+  window.addEventListener('keydown', function (event) {
+    if (!transformControl) return
+
+    switch (event.key) {
+      case 'q':
+        transformControl.setSpace(transformControl.space === 'local' ? 'world' : 'local')
+        break
+
+      case 'w':
+        transformControl.setMode('translate')
+        break
+
+      case 'e':
+        transformControl.setMode('rotate')
+        break
+
+      case 'r':
+        transformControl.setMode('scale')
+        break
+    }
+  })
+
   const [hovered, set] = useState()
   const colorArray = useMemo(
     () => Float32Array.from(new Array(1000).fill().flatMap((_, i) => tempColor.set(colors[i]).toArray())),
@@ -27,7 +58,6 @@ function Boxes() {
 
   const orbit = useRef()
   const { camera, gl, scene } = useThree()
-  const [transformControl, setTControl] = useState()
 
   useFrame(() => orbit.current.update())
   useEffect(() => {
