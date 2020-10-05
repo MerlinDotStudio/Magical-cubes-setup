@@ -1,0 +1,32 @@
+{
+  "name": "orthographic-camera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "drei": "^1.5.7",
+    "nice-color-palettes": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-fps-stats": "^0.1.3",
+    "react-scripts": "^3.4.3",
+    "react-three-fiber": "^5.0.3",
+    "three": "^0.121.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
