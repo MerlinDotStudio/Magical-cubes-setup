@@ -47,9 +47,9 @@ export const Cubes = () => {
 
   return (
     <>
-      <instancedMesh ref={ref} args={[null, null, 30]} position={[-9, 0, 0]}>
+      <instancedMesh ref={ref} args={[null, null, 30]} position={[-9, 0, 0]} castShadow={true} receiveShadow={true}>
         <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-        <meshPhongMaterial attach="material" color="lightblue" />
+        <meshStandardMaterial attach="material" color="lightblue" />
       </instancedMesh>
     </>
   )

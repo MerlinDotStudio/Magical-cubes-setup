@@ -22,7 +22,7 @@ export function init() {
   scene.add(box)
   //   transformControl.attach(box)
 
-  const planeGeometry = new PlaneBufferGeometry(150, 150)
+  const planeGeometry = new PlaneBufferGeometry(1500, 1500)
   const planeMaterial = new MeshLambertMaterial({ color: 0x8c8b88, side: DoubleSide })
   const plane = new Mesh(planeGeometry, planeMaterial)
   plane.rotation.x = (Math.PI / 2) * 45

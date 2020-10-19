@@ -20,8 +20,8 @@ var camera = new OrthographicCamera(
   (aspect * viewSize) / 2,
   viewSize / 2,
   -viewSize / 2,
-  150,
-  1000,
+  -1000,
+  10000,
 )
 camera.position.x = 150
 camera.position.y = 150
